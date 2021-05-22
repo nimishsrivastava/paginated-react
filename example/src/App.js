@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'paginated-react'
+import Pagination  from 'paginated-react'
 import 'paginated-react/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Pagination currentPage={10} totalPages={21} onClickPageNumber={(num)=>console.log(num)} />
 }
 
 export default App
